@@ -8,7 +8,7 @@ function Home() {
     return(
         <div className="home">
             <List />
-            <Chart />
+            <Chart/>
         </div>
     )
 }

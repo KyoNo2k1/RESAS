@@ -18,7 +18,7 @@ function List() {
                 listCities?.map((city, index) => (
                     <div className="city" key={index}>
                         <h4 className="listCityName">{city.prefName}</h4>
-                        <ListDis prefCode={city.prefCode}/>
+                        <ListDis prefCode={city.prefCode} prefName={city.prefName}/>
                     </div>
 
                 ))
