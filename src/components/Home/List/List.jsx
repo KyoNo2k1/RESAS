@@ -4,7 +4,7 @@ import './style.css'
 import * as api from '../../../app/api'
 import ListDis from './ListDis/ListDis';
 
-function List() {
+function List({infoCity,setInfoCity}) {
     const [listCities, setListCities] = useState()
 
     useEffect(() => {
@@ -18,7 +18,7 @@ function List() {
                 listCities?.map((city, index) => (
                     <div className="city" key={index}>
                         <h4 className="listCityName">{city.prefName}</h4>
-                        <ListDis prefCode={city.prefCode} prefName={city.prefName}/>
+                        <ListDis prefCode={city.prefCode} prefName={city.prefName} infoCity={infoCity} setInfoCity={setInfoCity}/>
                     </div>
 
                 ))
