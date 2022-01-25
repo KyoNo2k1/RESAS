@@ -8,7 +8,9 @@ function Home() {
     return(
         <div className="home">
             <List infoCity={infoCity} setInfoCity={setInfoCity}/>
-            <Chart infoCity={infoCity} />
+            {
+                infoCity.length>0 ? <Chart infoCity={infoCity} /> : <div className="noCity">Chọn thành phố bạn muốn xem!</div>
+            }
         </div>
     )
 }
