@@ -4,4 +4,11 @@
 }
 .noCity{
     margin-top: 100px;
+    font-size: 2rem;
+}
+@media screen and (max-width: 720px) {
+    .home{
+        display: block;
+        width: 100%;
+    }
 }

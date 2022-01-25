@@ -1,7 +1,7 @@
 .list{
     display: block;
-    width: 30%;
-    padding: 0 30px;
+    width: 180px;
+    padding: 0 20px;
     height: 100vh;
 }
 .listHeader{
@@ -12,23 +12,43 @@
 
 .listCity{
     height: 90%;
+    width: 180px;
     margin-top: 70px;
     display: block;
     overflow-y: auto;
 }
+
 .listCityName{
     display: flex;
-    width: 70px;
-    font-size: 1.2rem;
-}
-.listCityName{
+    width: 90%;
     cursor: pointer;
     justify-content: center;
     border-radius: 10px;
-
+    font-size: 1.6rem;
+    border: 1px solid rgb(133, 41, 151);
+    margin-right: 30px;
 }
 .listCityName:hover{
     opacity: 0.7;
     background-color: rgb(175, 175, 175);
     cursor: pointer;
+}
+
+@media screen and (max-width: 720px) {
+    .list{
+        display: flex;
+        width: 100%;
+        height: 40vh;
+    }
+    .listHeader{
+        position: fixed;
+        display: block;
+    }
+    .listCity{
+        height: 90%;
+        margin-top: 120px;
+        display: block;
+        overflow-y: auto;
+        width: 100%;
+    }
 }

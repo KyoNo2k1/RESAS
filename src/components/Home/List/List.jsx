@@ -12,7 +12,7 @@ function List({infoCity,setInfoCity}) {
     },[])
     return (
         <div className="list">
-            <h2 className="listHeader">Danh sách các thành phố tại Nhật Bản</h2>
+            <h2 className="listHeader">日本の都市のリスト</h2>
             <div className="listCity">
             {
                 listCities?.map((city, index) => (

@@ -1,6 +1,9 @@
 .dis {
-    margin-left: 20px
+    margin-left: 10px
 }
 .listDis{
     display: block
+}
+.listDisName{
+    font-size: 1.2rem
 }
