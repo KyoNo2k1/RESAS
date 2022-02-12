@@ -2,7 +2,7 @@ import axios from 'axios'
 
 const API = axios.create({
     baseURL: "https://opendata.resas-portal.go.jp/api/v1/",
-    headers: {'X-API-KEY': process.env.REACT_APP_API_KEY}
+    headers: {'X-API-KEY': "bJIqSKCpKa0FDvw5VanxtSGhgdT7Z5l9PsNidIm2"}
 })
 
 export const fetchCities = () => API.get(`/prefectures`)
