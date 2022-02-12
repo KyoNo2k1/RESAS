@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const API = axios.create({
-    baseURL: process.env.REACT_APP_BASE_URL,
+    baseURL: "https://opendata.resas-portal.go.jp/api/v1/",
     headers: {'X-API-KEY': process.env.REACT_APP_API_KEY}
 })
 
